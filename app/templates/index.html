@@ -12,13 +12,16 @@
         <div id="content"></div>
     </div>
     <!-- JS Libraries -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/react/0.12.0/react.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/react/0.12.0/JSXTransformer.js"></script>
+    <script src="{{ url_for('static', filename='bower_components/react/react.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='bower_components/react-dom/react-dom.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='bower_components/babel/browser.min.js')}}"></script>
+    <script type="text/jsx" src=></script>
 
     <!-- Scripts -->
-    <script type="text/jsx">
+    <script type="text/babel">
         var candidate = React.createClass({
             render: function(){
+                console.log("HI");
                 return (<h2>Hillary </h2>)
             }
         });
