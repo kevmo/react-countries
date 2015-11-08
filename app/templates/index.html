@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Who Owns Whom?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <h1>Who owns whom?</h1>
+        <br>
+        <div id="content"></div>
+    </div>
+    <!-- JS Libraries -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/react/0.12.0/react.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/react/0.12.0/JSXTransformer.js"></script>
+
+    <!-- Scripts -->
+    <script type="text/jsx">
+        var candidate = React.createClass({
+            render: function(){
+                return (<h2>Hillary </h2>)
+            }
+        });
+
+        React.render(
+            React.createElement(candidate, null),
+            document.getElementById('content')
+        );
+    </script>
+
+</body>
+</html>

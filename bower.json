@@ -1,0 +1,23 @@
+{
+  "name": "who-owns-whom",
+  "authors": [
+    "kevmo <k.james.moore@gmail.com>"
+  ],
+  "description": "Candidates are owned by the donors.",
+  "main": "run.sh",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "react": "~0.14.2"
+  }
+}
