@@ -2,35 +2,23 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Who Owns Whom?</title>
+    <title>Countries</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="container">
-        <h1>Who owns whom?</h1>
+        <h1>Which country do you want to know about?</h1>
         <br>
         <div id="content"></div>
     </div>
-    <!-- JS Libraries -->
-    <script src="{{ url_for('static', filename='bower_components/react/react.min.js')}}"></script>
-    <script src="{{ url_for('static', filename='bower_components/react-dom/react-dom.min.js')}}"></script>
-    <script src="{{ url_for('static', filename='bower_components/babel/browser.min.js')}}"></script>
-    <script type="text/jsx" src=></script>
+    <!-- Libraries -->
+    <script src="{{ url_for('static', filename='bower_components/react/react.js')}}"></script>
+    <script src="{{ url_for('static', filename='bower_components/react-dom/react-dom.js')}}"></script>
+    <script src="{{ url_for('static', filename='bower_components/babel/browser.js')}}"></script>
+    <script src="{{ url_for('static', filename='bower_components/jquery/dist/jquery.js')}}"></script>
+
 
     <!-- Scripts -->
-    <script type="text/babel">
-        var candidate = React.createClass({
-            render: function(){
-                console.log("HI");
-                return (<h2>Hillary </h2>)
-            }
-        });
-
-        React.render(
-            React.createElement(candidate, null),
-            document.getElementById('content')
-        );
-    </script>
-
+    <script type="text/babel" src="{{ url_for('static', filename='main.js')}}"></script>
 </body>
 </html>
